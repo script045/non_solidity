@@ -20,6 +20,42 @@
 			},
 			{
 				"inputs": [],
+				"name": "isEnrolled",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "int256",
+						"name": "age",
+						"type": "int256"
+					},
+					{
+						"internalType": "string",
+						"name": "course",
+						"type": "string"
+					}
+				],
+				"name": "setProfile",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "studentAge",
 				"outputs": [
 					{
@@ -73,11 +109,11 @@
 	},
 	"sources": {
 		"first.sol": {
-			"keccak256": "0xfb86f15d293c500db9b9932d5e51560a11142ae23aeb78a7f72a4b981705e800",
+			"keccak256": "0xe06bf74cd074c9344c3e85e47cc2e96f16be9bf43d6a1703c71196657eada077",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://198b64d36a3eb13941b2f0c54fc4b60f9fbef15660ba3fa8cae7543750df6635",
-				"dweb:/ipfs/QmPYmiqvqJXQ67t9CyshDAzwdBnbVpub13nhpbV9REQDXm"
+				"bzz-raw://89ae1fcb4c14f2056ee09ea9a20abd9a28e2766f89bc57a9ed7faf6fb6ee0580",
+				"dweb:/ipfs/QmS5cGqvvbVeoVb3DxKLW4RJFPPvdaEM4UxybozhxCY2u5"
 			]
 		}
 	},

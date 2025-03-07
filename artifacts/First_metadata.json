@@ -7,12 +7,64 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "welcomeMessage",
+				"name": "getNumber",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "greeting",
 				"outputs": [
 					{
 						"internalType": "string",
 						"name": "",
 						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isActive",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "myAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "num",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
 					}
 				],
 				"stateMutability": "view",
@@ -47,11 +99,11 @@
 	},
 	"sources": {
 		"first.sol": {
-			"keccak256": "0x636579cd54e46f8bdb851edff6862a01722d312c6af4f561bd3d2d1ce8d9a39c",
+			"keccak256": "0x6e0b61936fecdf9c4139be8b6a0423004b26a52739020fae809282d1d5a20cbd",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3d8e79c6715d4082325a3135a59a0c57390afc901c30a0fafdbcd9e4b2181657",
-				"dweb:/ipfs/QmcrAPndbafN4DFZDFUeUMbHhHqxgGcxzmpa2s9NbfSxZK"
+				"bzz-raw://867d7668d9ec185c2db977daae2a2ae632077405d2d1e684d88f23b4a4cb8c6f",
+				"dweb:/ipfs/QmSSHJr576aoZJ1iEC5w2hjmN7wQPRwg9eaaAghPTxVFRA"
 			]
 		}
 	},

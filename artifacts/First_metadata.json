@@ -7,20 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "getNumber",
-				"outputs": [
-					{
-						"internalType": "int256",
-						"name": "",
-						"type": "int256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "greeting",
+				"name": "courseName",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -33,38 +20,25 @@
 			},
 			{
 				"inputs": [],
-				"name": "isActive",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "myAddress",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "num",
+				"name": "studentAge",
 				"outputs": [
 					{
 						"internalType": "int256",
 						"name": "",
 						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "studentName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -99,11 +73,11 @@
 	},
 	"sources": {
 		"first.sol": {
-			"keccak256": "0x6e0b61936fecdf9c4139be8b6a0423004b26a52739020fae809282d1d5a20cbd",
+			"keccak256": "0xc5ac047c242dfbd6a03aa1cec8457f4f67d4c7a0cd32faf4c948bf7ea75139c0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://867d7668d9ec185c2db977daae2a2ae632077405d2d1e684d88f23b4a4cb8c6f",
-				"dweb:/ipfs/QmSSHJr576aoZJ1iEC5w2hjmN7wQPRwg9eaaAghPTxVFRA"
+				"bzz-raw://af9470cbf084c3f92228afcafa64ff0b8255ff560742cb5e4bede3081812399d",
+				"dweb:/ipfs/QmUUjHGe1E4EVegnr3PGfsSB6JZf84LXb5qprJKnXBBF3e"
 			]
 		}
 	},

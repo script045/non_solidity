@@ -1,0 +1,99 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "mark1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "mark2",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "mark3",
+						"type": "uint256"
+					}
+				],
+				"name": "calculateAverage",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "average",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "attendaceDays",
+						"type": "uint256"
+					}
+				],
+				"name": "didPassCourse",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"first.sol": "GeadeCalculator"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"first.sol": {
+			"keccak256": "0x64599e2d05d662a513ce5e17894e41fdd7891a5fad55af0e327e9be7c2db05ef",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://63652263fb225dcf5b7f35cc6f052b0f49066055ea0f8fbabc8c4d760edc266b",
+				"dweb:/ipfs/QmRnZ4PHLhsMsYxAGcnALr9VCaKCLHQzKU6jxoBzpAvvvK"
+			]
+		}
+	},
+	"version": 1
+}

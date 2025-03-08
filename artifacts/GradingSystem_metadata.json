@@ -4,66 +4,7 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "score",
-						"type": "uint256"
-					}
-				],
-				"name": "addScore",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getLetterGrade",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "hasPassed",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "scores",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			}
-		],
+		"abi": [],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -92,11 +33,11 @@
 	},
 	"sources": {
 		"first.sol": {
-			"keccak256": "0xc9632b48e22f8ad96b831a77a1c7ffba1f691f34893535bb2900d9397a7c9826",
+			"keccak256": "0x548082936ddee8ae8c15eac78e56deee2dc0823c0aac8382aec36b769d962474",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f54136de57a2c95f2cb1166f70b000411b02df183945e9a5a1dc4532c6bd09c6",
-				"dweb:/ipfs/QmbAe4YWsxgnLBZbFAHT4ctowE8YG5WYzzY5VytxKuKPRi"
+				"bzz-raw://f30409f72601ace12fc8a8459c702febca2e60ca133f229772861cd9f456cdea",
+				"dweb:/ipfs/QmaKN2rSUNkMkQgwbAVR1y8mBpwVriNFL27enTJPKJSjLk"
 			]
 		}
 	},

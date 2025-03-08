@@ -1,33 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.8;
 
-contract GradingSystem {
-    mapping(address => uint) public scores;
-
-    function addScore(uint score) public {
-        require(score <= 100, "Score must be between 0 to 100");
-        scores[msg.sender] = score;
+contract Function {
+    uint public counter = 0;
+    function increment() public {
+        counter += 1;
     }
-
-    //get letter grade based on scores
-
-    function getLetterGrade() public view returns (string memory){
-        uint score = scores[msg.sender];
-
-        if(score >= 80){
-            return "A+";
-        } else if (score >= 70) {
-            return "A";
-        } else if (score >= 60) {
-            return "B";
-        } else {
-            return "F";
-        }
-    }
-
-    //calculate if student passed or not 
-    function hasPassed() public view returns(bool){
-        return scores[msg.sender] >= 70;
-    }
-
 }

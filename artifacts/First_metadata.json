@@ -7,20 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "courseName",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "isEnrolled",
+				"name": "isActive",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -32,31 +19,86 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "isComplete",
+				"outputs": [
 					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"internalType": "int256",
-						"name": "age",
-						"type": "int256"
-					},
-					{
-						"internalType": "string",
-						"name": "course",
-						"type": "string"
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
-				"name": "setProfile",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "studentAge",
+				"name": "largeNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mediumNumber",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "message",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "muName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "myAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "num1",
 				"outputs": [
 					{
 						"internalType": "int256",
@@ -69,12 +111,25 @@
 			},
 			{
 				"inputs": [],
-				"name": "studentName",
+				"name": "num2",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "smallNumber",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
@@ -109,11 +164,11 @@
 	},
 	"sources": {
 		"first.sol": {
-			"keccak256": "0xe06bf74cd074c9344c3e85e47cc2e96f16be9bf43d6a1703c71196657eada077",
+			"keccak256": "0xf084d377b229c23d8e8a553eda1d7c8142abacb0ed67d84b9b2c229f94c5bb06",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://89ae1fcb4c14f2056ee09ea9a20abd9a28e2766f89bc57a9ed7faf6fb6ee0580",
-				"dweb:/ipfs/QmS5cGqvvbVeoVb3DxKLW4RJFPPvdaEM4UxybozhxCY2u5"
+				"bzz-raw://a57412593caa849abd8cd1af40e01ece160fa2677f3323c050073a636145d8ef",
+				"dweb:/ipfs/QmapTFfF5i2CGVwCxoScAYCqXCqeRaFiAfAh8KckjnubiE"
 			]
 		}
 	},

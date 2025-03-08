@@ -1,18 +1,40 @@
-# M36: Part 4 Solidity
-## M36.4 Building a student grade calculator
+# M39: Part 5 Solidity
+## M39.1 Array in solidity
+
+
+Array can store same type data
+string array can save string only 
+number array can number only
+
+Fixed sized array:
+uint[3] public myArray = [2,4,6]
+
+Dynamic Size Array
+uint[] public myArray
 
 
 ```
-contract GeadeCalculator{
-    // 3 subject, we calculate average, average marks > 60, attendance > 20 days
+contract Array{
+    //fixed size array
+    uint[3] public scores = [85, 80, 90];
 
-    function calculateAverage(uint mark1, uint mark2, uint mark3) public pure returns (uint ){
-        return (mark1+mark2+mark3)/3;
+    // dynamic size arrays
+    uint[] public dynamicScores;
+
+    function addScore(uint score) public {
+        dynamicScores.push(score); // add a new number to the end
     }
 
-    function didPassCourse (uint average, uint attendaceDays) public pure returns (bool){
-        return (average >= 60 && attendaceDays >= 20);
+    function getScore(uint index) public view returns (uint) {
+        return dynamicScores[index];
+    }
+ 
+    function getNumberOfScores() public view returns (uint) {
+        return dynamicScores.length;
     }
 
+    function removeLastScode() public {
+        dynamicScores.pop();
+    }
 }
 ```

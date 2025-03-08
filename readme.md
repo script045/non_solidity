@@ -1,31 +1,35 @@
-# M35.3 Comparison Operator
+# M35.4 Building a grading system
 
 
 ```
-contract Comparisons {
+contract GradingSystem {
+    mapping(address => uint) public scores;
 
-    uint public minmunAge = 18;
-    uint public maximunAge = 100;
-
-    // Equal to 
-    function isAdult(uint age) public view returns (bool){
-        return age >= minmunAge;
+    function addScore(uint score) public {
+        require(score <= 100, "Score must be between 0 to 100");
+        scores[msg.sender] = score;
     }
 
-    // Multiple Comparisons
-    function isValidAge(uint age) public view returns (bool){
-        return age >= minmunAge && age <= maximunAge;
-    }
+    //get letter grade based on scores
 
-    //checking conditions
-    function getAgeGroup (uint age) public pure returns (string memory){
-        if (age <13){
-            return "Children";
-        } else if (age < 20){
-            return "Teenage";
+    function getLetterGrade() public view returns (string memory){
+        uint score = scores[msg.sender];
+
+        if(score >= 80){
+            return "A+";
+        } else if (score >= 70) {
+            return "A";
+        } else if (score >= 60) {
+            return "B";
         } else {
-            return "Adults";
+            return "F";
         }
     }
+
+    //calculate if student passed or not 
+    function hasPassed() public view returns(bool){
+        return scores[msg.sender] >= 70;
+    }
+
 }
 ```

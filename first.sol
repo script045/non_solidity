@@ -24,6 +24,16 @@ contract First{
    //address 
    address public myAddress = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
 
+    uint public age = 20;
+    uint public price = 100;
+    uint public totalSupply = 100000;
+    int public temperature = -5;
+    int public myId = 10030;
+
+    function updateNumers (uint newAge, int temp) public {
+        age = newAge;
+        temperature = temp;
+    }
 
 
 }

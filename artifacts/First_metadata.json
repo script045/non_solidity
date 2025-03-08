@@ -7,6 +7,19 @@
 		"abi": [
 			{
 				"inputs": [],
+				"name": "age",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "isActive",
 				"outputs": [
 					{
@@ -98,6 +111,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "myId",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "num1",
 				"outputs": [
 					{
@@ -124,6 +150,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "price",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "smallNumber",
 				"outputs": [
 					{
@@ -133,6 +172,50 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "temperature",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "newAge",
+						"type": "uint256"
+					},
+					{
+						"internalType": "int256",
+						"name": "temp",
+						"type": "int256"
+					}
+				],
+				"name": "updateNumers",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -164,11 +247,11 @@
 	},
 	"sources": {
 		"first.sol": {
-			"keccak256": "0xf084d377b229c23d8e8a553eda1d7c8142abacb0ed67d84b9b2c229f94c5bb06",
+			"keccak256": "0x27a762a8dc7a9b155f976d2127de099a177eb8e5f34f67e1a9d55635792b171a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a57412593caa849abd8cd1af40e01ece160fa2677f3323c050073a636145d8ef",
-				"dweb:/ipfs/QmapTFfF5i2CGVwCxoScAYCqXCqeRaFiAfAh8KckjnubiE"
+				"bzz-raw://7207b7c0463e05e8424b967d42ca2f14f201b9fa53ab5801b4c575371dbd63d6",
+				"dweb:/ipfs/Qma2hwQV8B2zQDeH3HvxPoj347YK4Fu1ou6uHsRHvArHwe"
 			]
 		}
 	},

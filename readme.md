@@ -1,27 +1,26 @@
-# M39: Part 5 Solidity
-## M39.4 NestedMapping
+# M40: Part 6 Solidity
+## M40.1 Student Resistry - Mapping Project
 
 
 
 
 ```
-contract NestedMapping{
-    mapping(address => uint) public balances;
-    mapping(address => mapping(address => uint)) public allowances;
+contract StudentRegistry {
+    //Mapping from student id to their score
+    mapping (uint => uint) public studentScore;
 
-
-    function setAllowance(address spender, uint amount) public {
-        allowances[msg.sender][spender] = amount; //owner -? Spender => Amount
+    //Store a  student's score
+    function setScore(uint studentId, uint score) public {
+        studentScore[studentId] = score;
     }
 
-    // Get Allowance: allowances[owner][spender]
-
-
-    function resetBalance() public {
-        delete balances[msg.sender];
+    function getScore(uint studentId) public view returns (uint){
+        return studentScore[studentId];
     }
 
-
-    // Limitation : No iteration
+    //check if student passed (score >= 60)
+    function hasPassed (uint studentId) public view returns (bool) {
+        return studentScore[studentId]>= 60;
+    }
 }
 ```

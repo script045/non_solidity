@@ -1,52 +1,37 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.8;
 
-contract SchoolSystem{
+contract Events {
+    //event 
 
-    struct Student {
+    //declaration - emit 
+
+    event UserRegistered (address userAddress, string name, uint timestamp);
+    event PointsEarned(address user, uint points, string activity);
+
+    struct User {
         string name;
-        uint grade;
-        bool active;
+        uint points;
+        bool isRegistered;
     }
 
-    // array to keep track of all students ids
-    uint[] public studentIds;
-     mapping (uint => Student) public students;
+    mapping (address => User) public users;
+    
 
-    // mappping from student id to array of test scores
-    mapping(uint => uint[]) public studentScores;
+    function userRegistration(string memory _name) public {
+        require(!users[msg.sender].isRegistered,"User already registered");
+        users[msg.sender] =User(_name, 0, true);
 
-    // add a new student
-    function addStudent(uint id, string memory name) public {
-        students[id] = Student(name, 0, true);
-        studentIds.push(id);
-    }
-
-    // add test score for a student
-    function addScore(uint studentId, uint score) public {
-        require(students[studentId].active, "Student not found");
-
-        studentScores[studentId].push(score);
-
-        //update grade based on average
-        uint total = 0;
-        uint[] memory scores = studentScores[studentId];
-        for(uint i=0; i<scores.length; i++){
-            total += scores[i];    
-        }
-         students[studentId].grade = total/scores.length;
-        
-    }
-
-    //get all score for a student
-    function getScores(uint studentId) public view returns (uint[] memory){
-        return studentScores[studentId];
+        //Emit the event - making the announcement
+        emit UserRegistered(msg.sender, _name, block.timestamp);
     }
 
 
-    //get total number of students
-    function getTotalStudents() public view returns(uint){
-        return studentIds.length;
-    }
+    function earnPoints(uint _points, string memory _activity) public {
+        require(users[msg.sender].isRegistered,"User not registered");
 
+        users[msg.sender].points += _points;
+
+        emit PointsEarned(msg.sender, _points, _activity);
+    }
 }

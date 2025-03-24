@@ -1,10 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.8;
 
-contract Events {
-    //event 
-
-    //declaration - emit 
+contract FunctionModifier {
+    //Function Modifier -> Reusable Condition
 
     event UserRegistered (address userAddress, string name, uint timestamp);
     event PointsEarned(address user, uint points, string activity);

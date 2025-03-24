@@ -129,7 +129,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"first.sol": "Function"
+			"first.sol": "Functionodifier"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -144,11 +144,11 @@
 	},
 	"sources": {
 		"first.sol": {
-			"keccak256": "0x8619f67f63af4ba4de7bee3b050d6f50e3e36c38a19084ae6a478b5476957a17",
+			"keccak256": "0x11513d496801c02f9600fe5b24735b736b4ef68899c2ea8c9138659ca4ac11f1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e611fde5cd45fa55d4d2615a98da6ea858e8060f648196568a737dff9ddb6ff0",
-				"dweb:/ipfs/QmTT85RGNkhCDMSkVavTYZg8yqkVr3DC32BUdt8wgL7Mfo"
+				"bzz-raw://8e46ba5794388495888a6b63a51e149060ef635ed95818e5a2381dd2a2bf07c7",
+				"dweb:/ipfs/QmYM3EfvoWM8wNS32ABPDSGiTkMfBFeC4hSv1vLpGRHn7B"
 			]
 		}
 	},

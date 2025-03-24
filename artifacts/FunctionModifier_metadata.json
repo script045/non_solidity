@@ -6,6 +6,11 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -71,6 +76,19 @@
 				"name": "earnPoints",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -144,11 +162,11 @@
 	},
 	"sources": {
 		"first.sol": {
-			"keccak256": "0xdc8dbb60514fc31f6aabacfab3a925fe7ba486872c9034adb7cf1248a9ec398b",
+			"keccak256": "0xedb3b42df491cca807367de4e09770aed3ba9a06c349803d6910806205461108",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://91db4eda2b849bf4c6f87403b022d395edc8f4fa73679a294e3afc5a99bee615",
-				"dweb:/ipfs/QmP8JQD8d3LhhXjNH78Dj6x5UK31B7aFeTUiAoNEoq4U9b"
+				"bzz-raw://c8df61be3e988278ec3618c71970dbe464c687851d5334ea97558ab7143e2989",
+				"dweb:/ipfs/QmWjRSAkeAVJhbRKiGipTwfvWGNQBuJSUSZLZYw1ondbhB"
 			]
 		}
 	},

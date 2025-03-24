@@ -1,5 +1,5 @@
-# M40: Part 6 Solidity
-## M40.4 Function Modifier
+# M43: Part 7 Solidity
+## M43.1 Inheritance in Solidity
 
 
 

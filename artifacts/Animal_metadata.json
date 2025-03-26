@@ -45,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"first.sol": "Animal"
+			"index.sol": "Animal"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -59,7 +59,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"first.sol": {
+		"index.sol": {
 			"keccak256": "0xd3fa5ee119769ea87c322710d9c2dddf09aa60633bda61451285aa847197be06",
 			"license": "MIT",
 			"urls": [

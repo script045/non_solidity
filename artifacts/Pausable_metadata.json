@@ -7,33 +7,42 @@
 		"abi": [
 			{
 				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "makeSound",
+				"name": "owner",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "address",
 						"name": "",
-						"type": "string"
+						"type": "address"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "species",
+				"name": "pause",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "paused",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "bool",
 						"name": "",
-						"type": "string"
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "unpause",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -50,7 +59,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"index.sol": "Dog"
+			"index.sol": "Pausable"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -65,11 +74,11 @@
 	},
 	"sources": {
 		"index.sol": {
-			"keccak256": "0xd3fa5ee119769ea87c322710d9c2dddf09aa60633bda61451285aa847197be06",
+			"keccak256": "0xee2cac0f66138deda4501428d9757372acb7e954189776a141b5a500491e625e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b6494d86e13b7d6aff9e2fb49a83a17764fe82760c74be319550df74c3ce918c",
-				"dweb:/ipfs/QmeDPMmHUWDEFkBs6yESTgU33MYuJbc71jZzpkNUj1vVwE"
+				"bzz-raw://04ce274202fd8e44c53aa6afd4cae4c61d18318aed92494316c99cf1e0d6f7b5",
+				"dweb:/ipfs/QmTkfqDWWp9aE9UF3As9ctpLEw1zW26uUfQAvxbTZgfBzt"
 			]
 		}
 	},

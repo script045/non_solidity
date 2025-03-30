@@ -6,19 +6,19 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenAddress",
+						"type": "address"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "account",
-						"type": "address"
-					}
-				],
-				"name": "getBalance",
+				"inputs": [],
+				"name": "checkBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -27,32 +27,14 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "mint",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "owner",
+				"name": "token",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "contract IToken",
 						"name": "",
 						"type": "address"
 					}
@@ -73,14 +55,8 @@
 						"type": "uint256"
 					}
 				],
-				"name": "transfer",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
+				"name": "transferTokens",
+				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -98,7 +74,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"index.sol": "MyToken"
+			"index.sol": "TokenUser"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},

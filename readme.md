@@ -1,6 +1,5 @@
 # M44: Part 8 Solidity
-## M44.1 Introduction to Interface
-
+## M44.2 User Token & Token Exchange
 
 
 ```
@@ -36,6 +35,58 @@ contract MyToken is IToken {
             require(msg.sender == owner, "Only owner can mint");
             balances[to] += amount;
      }
+}
+
+
+//Contract that interacts with our token
+contract TokenUser {
+    IToken public token; //reference to token contract
+
+    constructor(address tokenAddress){
+        //store the address of the token contract
+        token = IToken(tokenAddress);
+    }
+
+    // function to check balance;
+    function checkBalance() external view returns(uint256){
+        return token.getBalance(msg.sender);
+    }
+
+    //function to transfer tokens
+    function transferTokens(address to, uint256 amount) external {
+        require(token.transfer(to, amount), "Transfer failed");
+    }
+}
+
+//Token  Excange contract using interface
+contract TokenExchange {
+    IToken public token1;
+    IToken public token2;
+
+    //exchange rate ( 1 token1 == rate token2
+    uint256 public rate;
+
+    constructor(address _token1, address _token2, uint256 _rate) {
+        token1 = IToken(_token1);
+        token2 = IToken(_token2);
+        rate = _rate;
+    }
+
+    //Function to swap token
+    function swapTokens(uint256 amount) external {
+        //check sender's balance of token1
+        require(token1.getBalance(msg.sender) >=amount, "Insufficient token1");
+
+        //calculate token2 amount
+        uint256 token2Amount = amount * rate;
+
+        // transfer token1 from sender to contract
+        require(token1.transfer(address(this), amount), "transger failed");
+
+        //transfer token2 to sender
+        require(token2.transfer(msg.sender, token2Amount), "transfer failed");
+
+    }
 }
 
 ```

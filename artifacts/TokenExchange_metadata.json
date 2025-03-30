@@ -6,19 +6,29 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_token1",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_token2",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_rate",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "account",
-						"type": "address"
-					}
-				],
-				"name": "getBalance",
+				"inputs": [],
+				"name": "rate",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -32,27 +42,22 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
 						"internalType": "uint256",
 						"name": "amount",
 						"type": "uint256"
 					}
 				],
-				"name": "mint",
+				"name": "swapTokens",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "owner",
+				"name": "token1",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "contract IToken",
 						"name": "",
 						"type": "address"
 					}
@@ -61,27 +66,16 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "transfer",
+				"inputs": [],
+				"name": "token2",
 				"outputs": [
 					{
-						"internalType": "bool",
+						"internalType": "contract IToken",
 						"name": "",
-						"type": "bool"
+						"type": "address"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -98,7 +92,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"index.sol": "MyToken"
+			"index.sol": "TokenExchange"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},

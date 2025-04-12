@@ -103,7 +103,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"MemoryVsStorage.sol": "MemoryVsStorage"
+			"AdvancePattern.sol": "MemoryVsStorage"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -117,7 +117,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"MemoryVsStorage.sol": {
+		"AdvancePattern.sol": {
 			"keccak256": "0xb17da0f7af7fddf9ff4e3a035432407d0886d15cce262c8f81bd86c36233a684",
 			"license": "MIT",
 			"urls": [

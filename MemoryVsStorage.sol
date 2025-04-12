@@ -1,8 +1,6 @@
-# M46: Part 9 Solidity
-## M46.2 Memory vs Storage
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
-
-```
 contract MemoryVsStorage {
     // Memory vs storage
     struct Person{
@@ -28,4 +26,3 @@ contract MemoryVsStorage {
         return (personToRead.name, personToRead.age);
     }
 }
-```

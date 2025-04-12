@@ -1,39 +1,60 @@
-# M44: Part 8 Solidity
-## M44.3 Token with Event
+# M46: Part 9 Solidity
+## M46.1 Memory, Storage & CallData in Solidity
 
+
+## Memodry Management & Storage
+1. Storage: Permanently store the data
+2. Memory: store data for short time
+3. CallData: Function er parameter -> Readonly
+
+### Storage
+    - state variable jatogulo amra likhi, sobgula by default storage save hoy
+    - Sobcheye beshi gas fee lage /kharoch hoy
+    - key & pair hisebe data gula store hoi
+    - slot -> 32 byte kore -> 256 bits
+    
+### Memory
+    - function parameter by default Memory te thake
+    - Storage er cheye ekhane gas fee kom lage
+    - new keyword use kore data allocate korte pari
+
+
+### CallData
+    - change korte pari na
+    - Reference type er janno useful
+    - ekhane gas fee sobcheye kom lage
 
 ```
-interface ITokenWithEvents {
-    event Transfer(address indexed from, address indexed to, uint256 amount);
-    function transfer(address to, uint256 amount) external returns (bool);
-}
+contract DataLocation{
+    // State variables
+    uint256 public storeData; //store in storage
 
-contract EventListener{
-    struct Transfer {
-        address from;
-        address to;
-        uint256 amount;
-        uint256 timestamp;
+    function setData(uint256 _data) public {
+
+        //in storage
+        storeData = _data;
     }
-    Transfer[] public transfers;
 
-    //Listen to transfer events
-    event TransferMade(address from, address to, uint256 amount, uint256 timestamp);
 
-    function makeTransfer(address tokenAddress, address to, uint256 amount) external {
-        ITokenWithEvents token = ITokenWithEvents(tokenAddress);
-        require(token.transfer(to, amount), "Transfer Failed");
+    //Memory 
 
-        //Store transfer details
+    function manipulateArray(uint[] memory _array) public pure returns (uint[] memory){
+        uint[] memory newArray = new uint[](_array.length);
 
-        transfers.push(Transfer(
-            msg.sender,
-            to,
-            amount,
-            block.timestamp
-        ));
+        for(uint i=0; i<_array.length; i++) {
+            newArray[i] = _array[i]*2;
+        }
 
-        emit TransferMade(msg.sender, to, amount, block.timestamp);
+        return newArray;
     }
-}
+
+    //call data
+    function processArray(uint256[] calldata _data) external pure returns (uint256){
+        uint256 sum = 0;
+        for(uint i = 0; i < _data.length; i++){
+            sum += _data[i];
+        }
+        return sum;
+    }
+} 
 ```

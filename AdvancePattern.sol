@@ -52,7 +52,29 @@ contract AdvancePattern{
         }
     }
 
+    //Storage theke read kore, then memory te gie ami return korbo
+    function getActiveUsers() external view returns (address[] memory, string[] memory){
+        uint256 activeCount = 0;
+        for(uint256 i=0; i < userList.length; i++){
+            if(profiles[userList[i]].active){
+                activeCount++;
+            }
+        }
 
-    
+        //createing array in memory
+        address[] memory activeAddress = new address[](activeCount);
+        string[] memory activeNames = new string[](activeCount);
+
+        uint256 currrentIndex = 0;
+        for(uint256 i=0; i<userList.length; i++){
+            if(profiles[userList[i]].active){
+                activeAddress[currrentIndex] = userList[i];
+                activeNames[currrentIndex] = profiles[userList[i]].name;
+                currrentIndex++;
+            }
+        }
+        return (activeAddress, activeNames);
+    }
+
 
 }

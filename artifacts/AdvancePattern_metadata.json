@@ -24,6 +24,24 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "getActiveUsers",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -65,11 +83,11 @@
 	},
 	"sources": {
 		"AdvancePattern.sol": {
-			"keccak256": "0x91ae34a3f7fb0b8c933038b0382da3fb7cb675fa4c5a2a5f793b32ed80816cb6",
+			"keccak256": "0xe2ab0baa2f2723d77f217f0c0c2cdaa7bed38c7d38bc6ea8265cfbbe9a14dc95",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cc8dc9a3e91671ee339da11909172535277be993850347fbf6d1b480a138cb29",
-				"dweb:/ipfs/QmZeTPDsGK84gXVXQpcTkCoiu7U7hd4FhPbVQZUg6xNhGU"
+				"bzz-raw://3cf94a1c945f74415da5436f9614500ccbb5422812cf36c5ac225f19037ef53d",
+				"dweb:/ipfs/QmRYUHSnT45qgxbfVpppZfNT57h1vSk1Qb9Np3q3k1QSY6"
 			]
 		}
 	},

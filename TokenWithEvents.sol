@@ -1,8 +1,10 @@
-# M44: Part 8 Solidity
-## M44.3 Token with Event
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
 
-```
+// contract demnestration event handling
+
+
 interface ITokenWithEvents {
     event Transfer(address indexed from, address indexed to, uint256 amount);
     function transfer(address to, uint256 amount) external returns (bool);
@@ -36,4 +38,3 @@ contract EventListener{
         emit TransferMade(msg.sender, to, amount, block.timestamp);
     }
 }
-```

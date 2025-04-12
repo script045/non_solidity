@@ -6,26 +6,43 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": false,
 						"internalType": "address",
-						"name": "account",
+						"name": "from",
 						"type": "address"
-					}
-				],
-				"name": "getBalance",
-				"outputs": [
+					},
 					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
 						"internalType": "uint256",
-						"name": "",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
+				"name": "TransferMade",
+				"type": "event"
 			},
 			{
 				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenAddress",
+						"type": "address"
+					},
 					{
 						"internalType": "address",
 						"name": "to",
@@ -37,7 +54,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "mint",
+				"name": "makeTransfer",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -45,6 +62,19 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "transfers",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
 						"internalType": "address",
 						"name": "to",
 						"type": "address"
@@ -53,17 +83,14 @@
 						"internalType": "uint256",
 						"name": "amount",
 						"type": "uint256"
-					}
-				],
-				"name": "transfer",
-				"outputs": [
+					},
 					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -80,7 +107,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"interface.sol": "IToken"
+			"TokenWithEvents.sol": "EventListener"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -94,12 +121,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"interface.sol": {
-			"keccak256": "0xe55c37af74d3c71da45dfac217543cc312301d6cf630927deec4fb9e99a2abb5",
+		"TokenWithEvents.sol": {
+			"keccak256": "0x9fefd1089bd1e93ad5b151a961ec54913b7530d0e427cb297eb798faedaa429f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c78c17952b8dd36113a5f863c421a7f1bd194c9d4c6e663244b323ca4cac78fb",
-				"dweb:/ipfs/QmTiMrtNpr8QdDxWRRu7XA8fGQ7Kpki237TcvBpWTNUwmk"
+				"bzz-raw://fbc41b3de8b1ebe7fc74a609443926d179949114d0108bc0d7741416590dd97a",
+				"dweb:/ipfs/QmSCzmhHAHcau1yqLb3U6TufR4QpDBCKkPJkrNBCSCnKUZ"
 			]
 		}
 	},

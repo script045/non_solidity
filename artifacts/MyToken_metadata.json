@@ -98,7 +98,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"index.sol": "MyToken"
+			"interface.sol": "MyToken"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -112,7 +112,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"index.sol": {
+		"interface.sol": {
 			"keccak256": "0xe55c37af74d3c71da45dfac217543cc312301d6cf630927deec4fb9e99a2abb5",
 			"license": "MIT",
 			"urls": [

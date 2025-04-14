@@ -44,6 +44,25 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256[]",
+						"name": "data",
+						"type": "uint256[]"
+					}
+				],
+				"name": "processLargeArray",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "amount",
 						"type": "uint256"
@@ -83,11 +102,11 @@
 	},
 	"sources": {
 		"AdvancePattern.sol": {
-			"keccak256": "0xe2ab0baa2f2723d77f217f0c0c2cdaa7bed38c7d38bc6ea8265cfbbe9a14dc95",
+			"keccak256": "0x41cf9ec57eedfd5546021ff47944d136d3fc740f30858fb70716a5ccef433bab",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3cf94a1c945f74415da5436f9614500ccbb5422812cf36c5ac225f19037ef53d",
-				"dweb:/ipfs/QmRYUHSnT45qgxbfVpppZfNT57h1vSk1Qb9Np3q3k1QSY6"
+				"bzz-raw://8533181be600417b34473be9677195b6ca79522e71db10f2d28bf2ef07c1c0ff",
+				"dweb:/ipfs/QmUdNQGbSJ5RmsVuUSV8TuCPsDgyvXLACrvuh8wwirJ5bd"
 			]
 		}
 	},

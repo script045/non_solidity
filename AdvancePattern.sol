@@ -76,5 +76,13 @@ contract AdvancePattern{
         return (activeAddress, activeNames);
     }
 
+    //
+    function processLargeArray(uint256[] calldata data) external pure returns (uint256) {
+        uint256 result = 0;
+        for (uint256 i=0; i <data.length; i++){
+            result +=data[i];
+        }
+        return result;
+    }
 
 }

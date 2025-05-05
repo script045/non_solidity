@@ -1,0 +1,120 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "studentIndex",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "grade",
+						"type": "uint256"
+					}
+				],
+				"name": "addGrade",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "addStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "students",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "hasPassedExam",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "studentIndex",
+						"type": "uint256"
+					}
+				],
+				"name": "updatePassStatus",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"struct.sol": "StructArrayExample"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"struct.sol": {
+			"keccak256": "0xf72acc65906b76d6bf8c7073059a9a8da88621a1d06a109f80f61f7291ca0d99",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e3c8bec7ddfae3d28e291366e69900778ba3a6e358955333a48c4820ab020c8c",
+				"dweb:/ipfs/Qmey5oKW96hviG4ZdGjYBAorHNtY8fZUs5Fsd69gg4LSfj"
+			]
+		}
+	},
+	"version": 1
+}

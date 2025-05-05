@@ -1,29 +1,38 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.8;
 
-contract StructExample {
-    struct Person{
+contract StructArrayExample{
+    struct Student{
         string name;
-        uint age;
-        address walletAddress;
-        bool isActive;
+        uint[] grades;
+        bool hasPassedExam;
+    }
+    // Array of Students
+    Student[] public students;
+
+    //adding student
+    function addStudent(string memory _name) public {
+        // creating a synamic array for grades
+        uint[] memory emptyGrades = new uint[](0);
+
+        //add student to array
+        students.push(Student(_name, emptyGrades, false));
+
     }
 
-    Person public person1; 
-    Person public person2;
-
-    function setPerson(string memory _name, uint _age, address _walletAddress) public {
-        person1 = Person(_name, _age, _walletAddress, true);
+    function addGrade(uint studentIndex, uint grade) public {
+        students[studentIndex].grades.push(grade);
     }
 
-    function setPersonAlternative(string memory _name, uint _age, address _walletAddress) public {
-        person2.name = _name;
-        person2.age = _age;
-        person2.walletAddress = _walletAddress;
-        person2.isActive = true;
+    //check if the student pass the exam
+    function updatePassStatus(uint studentIndex) public  returns (bool) {
+        uint  sum =0;
+        for (uint i = 0; i<students[studentIndex].grades.length; i++){
+            sum += students[studentIndex].grades[i];
+        }
+
+        uint average = sum/students[studentIndex].grades.length;
+        return students[studentIndex].hasPassedExam = (average >= 60);
     }
 
-    function getPerson() public view returns (string memory, uint, address, bool){
-        return (person1.name, person1.age, person1.walletAddress, person1.isActive);
-    }
 }

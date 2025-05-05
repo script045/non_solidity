@@ -1,7 +1,6 @@
-# M48: Part 11 Solidity
-## M48.3 Struct with Mapping
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.8;
 
-```
 contract ProductInventory{
     //Struct with mapping
 
@@ -28,6 +27,3 @@ contract ProductInventory{
         return (product.name, product.price, product.isAvailable);
     }
 }
-
-```
-

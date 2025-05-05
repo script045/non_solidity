@@ -1,5 +1,15 @@
 # M48: Part 11 Solidity
-## M48.3 Struct with Mapping
+## M48.4 Function Visibility
+
+
+functionVisibility or access modifier
+- we have 4 types : public, private, intenal, external
+
+when a function declreaded public it can be access from 
+
+- inside the contract
+- outside the contract
+- derived contacts
 
 ```
 contract ProductInventory{

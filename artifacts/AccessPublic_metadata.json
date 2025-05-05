@@ -1,0 +1,79 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "callIncrement",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "publicExample",
+				"outputs": [
+					{
+						"internalType": "contract FunctionVisibility",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "textPublicAccess",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"functionvisibility.sol": "AccessPublic"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"functionvisibility.sol": {
+			"keccak256": "0x7e1f0fbc24bace7f5a1918b8d1e3ce8e027a818cd743631231ab8a706e6b7f0f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://389984202a9b755f997142c6544a5da195f01eb81a05fc8aba2e577b70e177f3",
+				"dweb:/ipfs/QmPnS6CcP4aRURDmmRSkEBuJKP51UpwgF9VZdv7TCXaFUw"
+			]
+		}
+	},
+	"version": 1
+}
